@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purificação de Água</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .step {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Processo de Purificação de Água</h1>
+    <div id="steps">
+        <div class="step">
+            <img src="imagem1.jpg" alt="Passo 1">
+            <p>Passo 1: Filtração</p>
+        </div>
+        <div class="step">
+            <img src="imagem2.jpg" alt="Passo 2">
+            <p>Passo 2: Purificação Química</p>
+        </div>
+        <div class="step">
+            <img src="imagem3.jpg" alt="Passo 3">
+            <p>Passo 3: Destilação</p>
+        </div>
+    </div>
+
+    <script>
+        // Adicione algum código JavaScript aqui para tornar o site mais interativo, se desejar
+        // Por exemplo, você pode adicionar eventos de clique para as imagens para exibir mais informações sobre cada etapa do processo.
+        // Ou você pode adicionar uma animação para fazer as imagens aparecerem de forma mais atraente.
+        // Aqui está um exemplo muito simples de como adicionar um evento de clique para exibir um alerta ao clicar em uma imagem:
+
+        const steps = document.querySelectorAll('.step img');
+        steps.forEach((step, index) => {
+            step.addEventListener('click', () => {
+                alert(`Você clicou na imagem do Passo ${index + 1}`);
+            });
+        });
+    </script>
+</body>
+</html>
 
